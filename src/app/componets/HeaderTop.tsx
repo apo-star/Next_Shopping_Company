@@ -1,6 +1,10 @@
 'use client'
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FiSun, FiMoon } from "react-icons/fi"
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
+import DarkMode from './DarkMode';
 
 const HeaderTop = () => {
   return (
@@ -23,6 +27,9 @@ const HeaderTop = () => {
                 </div>
                 <div className="text-gray-500 text-[12px]">
                     <b>FREE SHIPPING</b> THIS WEEK ORDER OVER -$55
+                </div>
+                <div className='flex gap-4'>
+                        <DarkMode />
                 </div>
                 <div className="flex gap-4">
                     <select 

@@ -4,13 +4,13 @@ import "./globals.css";
 import HeaderTop from "./componets/HeaderTop";
 import HeaderMain from "./componets/HeaderMain";
 import Navbar from "./componets/Navbar";
-
-
+import { Providers } from "./Provider";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MobNavbar from "./componets/MobNavbar";
 import FooterMain from "./componets/FooterMain";
+import DarkMode from "./componets/DarkMode";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,12 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <HeaderTop />
-        <HeaderMain />
-        <Navbar />
-        <MobNavbar />
+        <Providers>
+          <HeaderTop />
+          <HeaderMain />
+          <Navbar />
+          <MobNavbar />
+        </Providers>
         
         {children}
         <FooterMain />  

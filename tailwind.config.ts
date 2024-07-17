@@ -1,11 +1,12 @@
-import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').config} */
 
-const config: Config = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       container: {
@@ -15,9 +16,11 @@ const config: Config = {
       colors: {
         accent: "#FF8F9C",
         blackish: "#1b1b1b",
+        
       }
     },
   },
   plugins: [],
 };
-export default config;
+
+
