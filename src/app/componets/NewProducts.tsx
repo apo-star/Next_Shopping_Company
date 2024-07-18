@@ -88,14 +88,14 @@ const productsData = [
     price: "120.00",
 },
 {
-    img:"/shoes1.jpg",
+    img:"/shoes5.jpg",
     title: "Sneakers",
     desc: "Plain White Casual Chunky Sneakers",
     rating: 3,
     price: "500.00",
 },
 {
-    img:"/shoes2.jpg",
+    img:"/shoes4.jpg",
     title: "Sneakers",
     desc: "Plain White Casual Chunky Sneakers",
     rating: 2,
