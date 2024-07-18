@@ -8,10 +8,10 @@ const Slide:React.FC<propsType> = ({img}) => {
   return (
     <div className='outline-none border-none relative'>
     <div className='absolute left-[30px] md:left-[70px] 
-    max-w-[250px] sm:max-w-[350]px top-[50%] -translate-y-[50%] 
+    max-w-[250px] sm:max-w-[350]px bottom-[1%] -translate-y-[50%] 
     space-y-2 lg:space-y-4 bg-[#ffffffa2] sm:bg-transparent 
     p-4 sm:p-0 rounded-lg sm:rounded-none'>
-        <div className='bg-accent text-white text-[14px] md:text-[16px] p-2 px-4 rounded lg:inline-block cursor-pointer hover:bg-blackish'>
+        <div className='bg-red-600 text-white text-[14px] md:text-[16px] p-2 px-8 rounded lg:inline-block cursor-pointer hover:bg-blackish'>
             shop Now
         </div>
     </div> 

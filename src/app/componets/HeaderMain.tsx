@@ -3,13 +3,23 @@ import { BiUser } from 'react-icons/bi'
 import { FiHeart } from 'react-icons/fi'
 import { BsSearch } from 'react-icons/bs'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
+import svg from '../../../public/Shopping Company.png'
+import Image from "next/image"
 
 const HeaderMain = () => {
   return (
     <div className="border-b border-grey-200 py-6">
         <div className="container sm:flex justify-between items-center">
         <div className="font-bold text-4xl text-center pb-4 sm:pb-0 text-blaskish">
-            Shopping Company
+            <Image 
+            src={svg}
+            width={160}
+            height={200}
+            sizes="200x200"
+            alt="logo"
+            priority={false}
+            title="logo"/>
+            
     </div>
         <div className="w-full sm:w-[300px] md:w-[70%] relative">
             <input className="border-gray-200 border p-2 px-4 rounded-lg w-full" 
